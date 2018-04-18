@@ -25,8 +25,8 @@ use std::sync::Mutex;
 /// ```
 #[derive(Debug,Clone,Copy,Eq,PartialEq,PartialOrd,Ord)]
 pub struct HLTimespec {
-    wall: time::Timespec,
-    logical: u16,
+    pub wall: time::Timespec,
+    pub logical: u16,
 }
 
 impl HLTimespec {
